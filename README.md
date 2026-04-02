@@ -1,3 +1,4 @@
+![Agent OS Banner](./agent_os_banner.png)
 # 🤖 AI Agent Vault v3.0 (Industrial Grade)
 
 ![Agents](https://img.shields.io/badge/Total_Agents-100-blueviolet?style=for-the-badge)
