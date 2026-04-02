@@ -1,51 +1,33 @@
-# 🤖 Autonomous Agent Vault v2.0
+# 🤖 AI Agent Vault v3.0 (Industrial Grade)
 
-![GitHub Excellence](https://img.shields.io/badge/Architecture-Autonomous_Agents-blueviolet?style=for-the-badge&logo=github)
-![Logic Framework](https://img.shields.io/badge/Logic-Chain--of--Thought-orange?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Operational-brightgreen?style=for-the-badge)
-
-> **The definitive collection of 25+ High-Authority AI Personas engineered with a Recursive Reasoning Framework.**
+![Agents](https://img.shields.io/badge/Total_Agents-100-blueviolet?style=for-the-badge)
+![Tier](https://img.shields.io/badge/Includes-PRO_Industrial_Tier-brightgreen?style=for-the-badge)
 
 ---
 
-## 🏗️ System Architecture
+## 📂 1. Industrial PRO Agents (Expansion Pack)
+*Agents με ενσωματωμένο JSON Config και Recursive Logic.*
 
-Αυτό το Vault δεν περιέχει απλά prompts. Κάθε Agent είναι δομημένος με το **Modular Cognitive Protocol**, το οποίο αναγκάζει το LLM να εκτελεί τρία επίπεδα ανάλυσης πριν την απάντηση:
-1. **Deconstruction:** Ανάλυση κρυφών παραμέτρων.
-2. **Stress Testing:** Προσομοίωση αποτυχίας και διόρθωση.
-3. **Recursive Refinement:** Αυτο-βελτίωση του τελικού αποτελέσματος.
-
----
-
-## 📂 The Agent Registry
-
-| Category | Agent Domain | Technical Specs |
+| Category | Type | Access |
 | :--- | :--- | :--- |
-| 🛡️ **Engineering** | Cloud, CyberSec, AI Safety | [Access Directory](./1_Engineering_Systems) |
-| 📈 **Strategic Ops** | VC, M&A, Global ScaleUp | [Access Directory](./2_Strategic_Operations) |
-| 🧠 **Creative Intel** | Cognitive UX, Brand Legacy | [Access Directory](./3_Creative_Intelligence) |
-| ⚖️ **Legal & Ethics** | IP Strategy, Bioethics, Law | [Access Directory](./4_Legal_Medical_Ethics) |
-| 🔬 **Scientific Synth** | Quantum, Logic, Econ-Systems | [Access Directory](./5_Scientific_Synthesis) |
+| 🛡️ **Core Systems** | Infrastructure & Security | [PRO Directory](./PRO_1_Core_Systems) |
+| 📉 **Strategic Intel** | Venture & Economics | [PRO Directory](./PRO_2_Strategic_Intelligence) |
+| 🧠 **Creative Eng** | Cognitive UX & Branding | [PRO Directory](./PRO_3_Creative_Engineering) |
+| ⚖️ **Advisory** | High-Stakes Compliance | [PRO Directory](./PRO_4_High_Stakes_Advisory) |
+| 🔬 **Synthesis** | Advanced Mathematics | [PRO Directory](./PRO_5_Advanced_Synthesis) |
 
 ---
 
-## 🛠️ Deployment Protocol (How to use)
+## 📁 2. Standard Expert Personas
+*Η κλασική βιβλιοθήκη εξειδικευμένων βοηθών.*
 
-Για να ενεργοποιήσετε έναν Agent με πλήρη ισχύ, ακολουθήστε τα εξής βήματα:
-
-1. **Select:** Επιλέξτε τον Agent που ταιριάζει στο Task σας.
-2. **Inject:** Αντιγράψτε το περιεχόμενο του block `[ROLE]` και `[INSTRUCTION]`.
-3. **Initialize:** Επικολλήστε το ως **System Prompt** στο ChatGPT (GPT-4o), Claude 3.5 ή Gemini Pro.
-4. **Execute:** Δώστε το task σας. Ο Agent θα ξεκινήσει αυτόματα το reasoning mode.
-
----
-
-## 🚦 Constraints & Rules
-* **No Conversational Filler:** Οι Agents είναι προγραμματισμένοι για μέγιστη πυκνότητα πληροφορίας.
-* **Self-Correction:** Κάθε Agent περιλαμβάνει module αυτο-διόρθωσης στο τέλος της ανάλυσης.
-* **Expert Lexicon:** Χρήση ορολογίας επιπέδου Principal Engineer/Executive.
+| Category | Access |
+| :--- | :--- |
+| 💻 Tech | [Explore](./1_Tech_Architects) |
+| 📊 Business | [Explore](./2_Business_Strategists) |
+| 🎨 Creative | [Explore](./3_Creative_Directors) |
+| ⚖️ Legal | [Explore](./4_Legal_Medical) |
+| 🎓 Academic | [Explore](./5_Academic_Research) |
 
 ---
-<p align="center">
-<i>Designed for Enterprise-Grade Prompt Engineering. Built for the future of Autonomous AI.</i>
-</p>
+<p align="center"><b>Industrial-Grade Prompt Engineering Frameworks</b></p>

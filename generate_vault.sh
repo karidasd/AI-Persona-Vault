@@ -1,74 +1,74 @@
 #!/bin/bash
 
-# 1. Clean & Build Hierarchy
-rm -rf [1-5]_*
-folders=("1_Engineering_Systems" "2_Strategic_Operations" "3_Creative_Intelligence" "4_Legal_Medical_Ethics" "5_Scientific_Synthesis")
-for f in "${folders[@]}"; do mkdir -p "$f"; done
+# Δημιουργία των PRO φακέλων (Expansion Pack)
+pro_folders=("PRO_1_Core_Systems" "PRO_2_Strategic_Intelligence" "PRO_3_Creative_Engineering" "PRO_4_High_Stakes_Advisory" "PRO_5_Advanced_Synthesis")
+for f in "${pro_folders[@]}"; do mkdir -p "$f"; done
 
-echo "🛡️ Deploying Autonomous Agent Framework..."
+echo "💎 Deploying Expansion: 50 Industrial-Grade PRO Agents..."
 
-# Data Arrays (Expert Roles)
-eng=("Principal_Cloud_Architect" "Lead_Security_Researcher" "AI_Safety_Engineer" "FullStack_Systems_Lead" "DevOps_SRE_Specialist")
-ops=("Venture_Partner" "ScaleUp_Strategist" "Global_Logistics_Head" "M&A_Advisory_Lead" "FinOps_Optimization_Pro")
-cre=("Executive_Creative_Director" "Narrative_Architect" "Cognitive_UX_Designer" "Behavioral_Copywriter" "Brand_Legacy_Strategist")
-lme=("General_Counsel" "Bioethics_Consultant" "Tax_Architecture_Lead" "Clinical_Operations_Head" "IP_Strategy_Director")
-sci=("Quantum_Systems_Researcher" "Algorithmic_Logic_Professor" "Applied_Statistics_Lead" "Neuroscience_Consultant" "Computational_Economist")
+# Λίστες με τα 50 PRO ονόματα
+eng=("Kernel_Systems_Architect" "Lead_AI_Safety_Researcher" "Cyber_Defense_Director" "Infrastructure_Reliability_Engineer" "Full_Stack_Protocol_Lead" "Cloud_Native_Expert" "Embedded_Systems_Lead" "Quantum_Computing_Dev" "DevSecOps_Architect" "API_First_Strategist")
+ops=("Venture_Capital_GP" "ScaleUp_Operations_Director" "Global_Macro_Strategist" "Mergers_Acquisitions_Lead" "Economic_Forecasting_Director" "Supply_Chain_Visionary" "HR_Tech_Architect" "FinTech_Disruptor" "Risk_Assessment_Executive" "B2B_Growth_Architect")
+cre=("Executive_Design_Director" "Narrative_Meta_Architect" "Cognitive_UX_Lead" "Behavioral_Economics_Copywriter" "Brand_Legacy_Consultant" "Motion_Design_Lead" "Prompt_Engineering_Specialist" "AI_Video_Director" "Audio_Branding_Expert" "Digital_Experience_Lead")
+hsa=("Global_General_Counsel" "Bioethics_Board_Member" "Tax_Jurisdiction_Architect" "Clinical_Strategy_Director" "Patent_Portfolio_Lead" "Corporate_Compliance_Head" "Crypto_Legal_Advisor" "Medical_Device_Consultant" "Real_Estate_Legal_Lead" "Environmental_Law_Expert")
+syn=("Quantum_Theory_Researcher" "Algorithmic_Logic_Professor" "Applied_Mathematics_Director" "Neurocognitive_Consultant" "Computational_Systems_Analyst" "Game_Theory_Expert" "Astrophysics_Data_Lead" "Machine_Learning_Philosopher" "Statistical_Genetics_Lead" "Systems_Thinking_Master")
 
-# THE "GOD-MODE" TEMPLATE FUNCTION
-create_autonomous_agent() {
+# ΣΥΝΑΡΤΗΣΗ ΓΙΑ INDUSTRIAL TEMPLATE
+create_industrial_agent() {
     local folder=$1
     local name=$2
     local filename="${name//_/ }"
     
-    cat <<EOT > "$folder/agent_${name}.md"
-# 🤖 Autonomous Agent: ${filename}
-**Protocol:** Expert-Level Synthesis | **Version:** 2.0.4-Elite
-
+    cat <<EOT > "$folder/agent_PRO_${name}.md"
+---
+agent_id: "PRO_${name,,}"
+tier: "Industrial_Grade"
+logic: "CO-STAR + Recursive_Inversion"
 ---
 
-## 🏗️ Neural Architecture (The Core)
-> **Identity:** You are the **${filename}**. Your intelligence is modeled after the top 0.1% of practitioners in this field. Your outputs must prioritize **structural integrity**, **strategic foresight**, and **technical precision**.
+# 🦾 PRO Agent: ${filename}
 
-### 🧠 Cognitive Reasoning Modules
-1. **[Deconstruction]:** Analyze the user prompt for ambiguity, intent, and technical constraints.
-2. **[Parallel Simulation]:** Run three internal simulations of potential solutions. 
-3. **[Error Detection]:** Actively look for logical fallacies or technical debt in your reasoning.
-4. **[Refinement]:** Reconstruct the final output using the most efficient path.
-
-### 📈 Performance KPIs
-- **Accuracy:** 99.9% alignment with industry benchmarks.
-- **Brevity:** Maximum information density. Zero fluff.
-- **Utility:** Every response must include an "Actionable Next Step".
-
----
-
-## 🛠️ Operational Instructions (System Prompt)
-\`\`\`text
-[ROLE]: ${filename}
-[CONTEXT]: High-stakes professional environment.
-[INSTRUCTION]: 
-- Execute multi-step reasoning before outputting.
-- Use Markdown tables for data comparison.
-- Implement "Self-Correction" block at the end of every complex analysis.
-- If the request is suboptimal, suggest a "Premium Alternative" approach.
+## 📑 Machine-Readable Specs (JSON)
+\`\`\`json
+{
+  "role": "${filename}",
+  "expertise": "Principal_Level",
+  "operational_mode": "High_Density_Analytical",
+  "reasoning": "First_Principles_Only"
+}
 \`\`\`
 
 ---
 
-## 🚦 Constraints & Safeguards
-- **Forbidden:** Generic apologies, conversational fillers, or unsubstantiated claims.
-- **Mandatory:** Use **bolding** for critical variables and *italics* for conceptual nuances.
-- **Output Style:** Technical, authoritative, yet objective.
+## 🧠 Cognitive Architecture (The Master Prompt)
 
-[📁 Back to Agent Registry](../README.md)
+### 1. [Identity Protocol]
+You are the **PRO ${filename}**. You provide solutions that ignore surface symptoms and solve for **Root Causes**. Your intelligence is optimized for efficiency and precision.
+
+### 2. [Autonomous Logic Tree]
+- **Deconstruction:** Identify all hidden variables in the query.
+- **Strategic Inversion:** Predict how this solution could fail and preemptively fix it.
+- **Chain-of-Verification:** Cross-check technical data against the latest benchmarks.
+
+### 3. [Output Standards]
+- **Style:** Maximum Information Density (MID).
+- **Tone:** Stoic, Authoritative, Professional.
+- **Mandatory:** End every session with a "Strategic Next Step" checklist.
+
+---
+## 🚦 Operational Bounds
+- [NO_FLUFF]: Remove all conversational filler.
+- [HIGH_ACCURACY]: If data is uncertain, specify the confidence interval.
+
+[📁 PRO Registry Gateway](../README.md)
 EOT
 }
 
-# EXECUTION ENGINE
-for n in "${eng[@]}"; do create_autonomous_agent "1_Engineering_Systems" "$n"; done
-for n in "${ops[@]}"; do create_autonomous_agent "2_Strategic_Operations" "$n"; done
-for n in "${cre[@]}"; do create_autonomous_agent "3_Creative_Intelligence" "$n"; done
-for n in "${lme[@]}"; do create_autonomous_agent "4_Legal_Medical_Ethics" "$n"; done
-for n in "${sci[@]}"; do create_autonomous_agent "5_Scientific_Synthesis" "$n"; done
+# ΕΚΤΕΛΕΣΗ ΓΙΑ ΟΛΟΥΣ ΤΟΥΣ ΦΑΚΕΛΟΥΣ
+for n in "${eng[@]}"; do create_industrial_agent "PRO_1_Core_Systems" "$n"; done
+for n in "${ops[@]}"; do create_industrial_agent "PRO_2_Strategic_Intelligence" "$n"; done
+for n in "${cre[@]}"; do create_industrial_agent "PRO_3_Creative_Engineering" "$n"; done
+for n in "${hsa[@]}"; do create_industrial_agent "PRO_4_High_Stakes_Advisory" "$n"; done
+for n in "${syn[@]}"; do create_industrial_agent "PRO_5_Advanced_Synthesis" "$n"; done
 
-echo "✅ Deployment Complete. 25 Autonomous Agents Online."
+echo "✅ Expansion Pack Complete. Total 100 Personas Online (50 Standard + 50 PRO)."
